@@ -1,13 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&display=swap');
+@font-face {
+    font-family: 'amostely_signatureregular';
+    src: url('../fonts/amostelysignature-webfont.woff2') format('woff2'),
+         url('../fonts/amostelysignature-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 
+}
 *{
     padding: 0;
     margin: 0;
     // all: unset;
 }
 
+body{
+    font-family: 'Roboto', sans-serif;
+    padding: 0 10vw;
+    
+}
+
+
+.left-content{
+    padding: 20vh 0;
+
 button{
     background: #000;
-    border-radius: 5px;
+    border-radius: 13px;
     color: #fff;
-    padding: 10px 20px;
+    padding: 15px 30px;
+    margin-top: 8vh;
 }
+
+hr{
+    width: 14%;
+    height: 6px ;
+    background: #000;
+    margin-left: 0;
+    margin-top: 0.5rem !important;
+}
+.h-10{
+    // height: 10px;
+}
+p{
+    width: 60%;
+    font-size: 17px;
+    line-height: 1.3;
+}
+
+span{
+    font-size: 60px;
+    font-weight: 700;
+}
+h1{
+    font-size: 60px;
+    font-weight: 100 !important;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.2;
+    margin-bottom: 0 !important;
+}
+}
+
+.padded{
+}
+
+ul{
+    // position: absolute;
+    bottom: 10px;
+    // padding-top: 10vh;
+    list-style: none;
+    display: flex;
+    flex-flow: row;
+    // justify-content: space-between;
+
+    li{
+        padding-right: 15px;
+        font-size: 20px;
+        
+    }
+}
+
+.copyright-text{
+    //  position: absolute;
+    text-align: end;
+    bottom: 10px;
+    // text-align: right;
+
+    span{
+        font-family: 'amostely_signatureregular';
+        font-size: 30px;
+    }
+}
+
+.right-content{
+    // position: relative;
+    bottom: 0;
+    img{
+        padding-top: 10vh;
+    }
+}
+

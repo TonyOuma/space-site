@@ -1,12 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&display=swap");
+@font-face {
+  font-family: 'amostely_signatureregular';
+  src: url("../fonts/amostelysignature-webfont.woff2") format("woff2"), url("../fonts/amostelysignature-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   padding: 0;
   margin: 0;
 }
 
-button {
+body {
+  font-family: 'Roboto', sans-serif;
+  padding: 0 10vw;
+}
+
+.left-content {
+  padding: 20vh 0;
+}
+
+.left-content button {
   background: #000;
-  border-radius: 5px;
+  border-radius: 13px;
   color: #fff;
-  padding: 10px 20px;
+  padding: 15px 30px;
+  margin-top: 8vh;
+}
+
+.left-content hr {
+  width: 14%;
+  height: 6px;
+  background: #000;
+  margin-left: 0;
+  margin-top: 0.5rem !important;
+}
+
+.left-content p {
+  width: 60%;
+  font-size: 17px;
+  line-height: 1.3;
+}
+
+.left-content span {
+  font-size: 60px;
+  font-weight: 700;
+}
+
+.left-content h1 {
+  font-size: 60px;
+  font-weight: 100 !important;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.2;
+  margin-bottom: 0 !important;
+}
+
+ul {
+  bottom: 10px;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+}
+
+ul li {
+  padding-right: 15px;
+  font-size: 20px;
+}
+
+.copyright-text {
+  text-align: end;
+  bottom: 10px;
+}
+
+.copyright-text span {
+  font-family: 'amostely_signatureregular';
+  font-size: 30px;
+}
+
+.right-content {
+  bottom: 0;
+}
+
+.right-content img {
+  padding-top: 10vh;
 }
 /*# sourceMappingURL=main.css.map */
