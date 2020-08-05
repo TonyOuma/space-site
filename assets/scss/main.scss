@@ -27,11 +27,13 @@ body{
 }
  .header-logo{
      float: left;
+     a{
+     color: #000;
+     font-size: 27px;
+     font-weight: 700;
 }
- .header-logo img{
-     width: 104px;
-     height: auto;
-}
+ }
+
  header nav{
      float: left;
      height: 100%;
@@ -307,6 +309,10 @@ ul{
 // Media Queries
 /* Small only */
 @media screen and (max-width: 39.9375em) {
+
+    body {
+    padding: 0 5vw;
+}
    .content-wrap{
        .row{
            flex-flow: column-reverse;
@@ -332,7 +338,9 @@ ul{
     margin-bottom: 1.3rem;
 }
 }
-
+.right-content img {
+    padding-top: 0;
+}
 }
 
 /* Medium and up */

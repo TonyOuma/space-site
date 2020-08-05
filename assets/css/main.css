@@ -27,9 +27,10 @@ header {
   float: left;
 }
 
-.header-logo img {
-  width: 104px;
-  height: auto;
+.header-logo a {
+  color: #000;
+  font-size: 27px;
+  font-weight: 700;
 }
 
 header nav {
@@ -320,6 +321,9 @@ ul li {
 
 /* Small only */
 @media screen and (max-width: 39.9375em) {
+  body {
+    padding: 0 5vw;
+  }
   .content-wrap .row {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -341,6 +345,9 @@ ul li {
     padding: 9px 23px;
     margin-top: 0vh;
     margin-bottom: 1.3rem;
+  }
+  .right-content img {
+    padding-top: 0;
   }
 }
 
