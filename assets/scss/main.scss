@@ -10,7 +10,6 @@
 *{
     padding: 0;
     margin: 0;
-    // all: unset;
 }
 
 body{
@@ -24,6 +23,16 @@ body{
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
  header{
      padding-top: 35px;
+
+     nav{
+          float: right;
+     height: 100%;
+    z-index: 1;
+    top: 0px;
+    right: 134px;
+    background-color: transparent;
+    overflow-x: hidden;
+     }
 }
  .header-logo{
      float: left;
@@ -34,35 +43,9 @@ body{
 }
  }
 
- header nav{
-     float: right;
-     height: 100%;
-    /* width: 90px; */
-    // position: fixed;
-    z-index: 1;
-    top: 0px;
-    right: 134px;
-    background-color: transparent;
-    overflow-x: hidden;
-    // padding-top: 200px;
-}
-
  .top-main-nav {
      padding-left: 75px;
-}
- .top-main-nav li{
-     list-style: none;
-     display: inline-block;
-    //  flex-flow: row;
-    //  padding-right:28px;
-     padding-top:5px;
-     font-size: 14px;
-}
 
-.top-main-nav li.current a{
-   font-weight: bold;
-}
- .top-main-nav {
      display: block;
      max-height: 0;
      overflow: hidden;
@@ -72,7 +55,27 @@ body{
      -o-transition: all 0.3s ease-out;
      transition: all 0.3s ease-out;
      z-index: 9999;
+
+     li{
+         list-style: none;
+     display: inline-block;
+     padding-top:5px;
+     font-size: 14px;
+     }
+
+     a{
+         position: relative;
+     padding-bottom: 0px;
+     transition: color .35s ease;
+     color: #4A4A4A;
+     display: inline-block;
+     }
 }
+
+.top-main-nav li.current a{
+   font-weight: bold;
+}
+
  @media (min-width: 40em) {
      .top-main-nav {
          display: block !important;
@@ -86,11 +89,7 @@ body{
     }
 }
  .top-main-nav a {
-     position: relative;
-     padding-bottom: 0px;
-     transition: color .35s ease;
-     color: #4A4A4A;
-     display: inline-block;
+     
 }
  .top-main-nav a:before {
      content: '';
@@ -198,6 +197,13 @@ body{
   }
 }
 
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+   END : HEADER 
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+/* Main Site Contents*/
+
 
 .left-content{
     padding: 16vh 0;
@@ -216,9 +222,6 @@ hr{
     background: #000;
     margin-left: 0;
     margin-top: 0.5rem !important;
-}
-.h-10{
-    // height: 10px;
 }
 p{
     width: 60%;
@@ -264,10 +267,8 @@ ul{
 }
 
 .copyright-text{
-    //  position: absolute;
     text-align: end;
     bottom: 10px;
-    // text-align: right;
 
     span{
         font-family: 'amostely_signatureregular';
@@ -276,7 +277,6 @@ ul{
 }
 
 .right-content{
-    // position: relative;
     bottom: 0;
     img{
         padding-top: 7vh;
@@ -298,9 +298,6 @@ ul{
    }
    .left-content{
        padding: 0;
-   span {
-    // font-size: 44px;
- }
  p{
      width: 100%;
  }

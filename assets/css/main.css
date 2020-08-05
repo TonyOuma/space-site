@@ -24,6 +24,16 @@ header {
   padding-top: 35px;
 }
 
+header nav {
+  float: right;
+  height: 100%;
+  z-index: 1;
+  top: 0px;
+  right: 134px;
+  background-color: transparent;
+  overflow-x: hidden;
+}
+
 .header-logo {
   float: left;
 }
@@ -34,19 +44,14 @@ header {
   font-weight: 700;
 }
 
-header nav {
-  float: right;
-  height: 100%;
-  /* width: 90px; */
-  z-index: 1;
-  top: 0px;
-  right: 134px;
-  background-color: transparent;
-  overflow-x: hidden;
-}
-
 .top-main-nav {
   padding-left: 75px;
+  display: block;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  z-index: 9999;
 }
 
 .top-main-nav li {
@@ -56,17 +61,17 @@ header nav {
   font-size: 14px;
 }
 
-.top-main-nav li.current a {
-  font-weight: bold;
+.top-main-nav a {
+  position: relative;
+  padding-bottom: 0px;
+  -webkit-transition: color .35s ease;
+  transition: color .35s ease;
+  color: #4A4A4A;
+  display: inline-block;
 }
 
-.top-main-nav {
-  display: block;
-  max-height: 0;
-  overflow: hidden;
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
-  z-index: 9999;
+.top-main-nav li.current a {
+  font-weight: bold;
 }
 
 @media (min-width: 40em) {
@@ -80,15 +85,6 @@ header nav {
   .top-main-nav {
     padding-left: 15px;
   }
-}
-
-.top-main-nav a {
-  position: relative;
-  padding-bottom: 0px;
-  -webkit-transition: color .35s ease;
-  transition: color .35s ease;
-  color: #4A4A4A;
-  display: inline-block;
 }
 
 .top-main-nav a:before {
@@ -210,6 +206,10 @@ header nav {
   }
 }
 
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+   END : HEADER 
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* Main Site Contents*/
 .left-content {
   padding: 16vh 0;
 }
