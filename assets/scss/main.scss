@@ -16,7 +16,7 @@
 body{
     font-family: 'Roboto', sans-serif;
     padding: 0 10vw;
-    
+    background: #fff;
 }
 
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
@@ -35,7 +35,7 @@ body{
  }
 
  header nav{
-     float: left;
+     float: right;
      height: 100%;
     /* width: 90px; */
     // position: fixed;
@@ -52,9 +52,9 @@ body{
 }
  .top-main-nav li{
      list-style: none;
-     display: flex;
-     flex-flow: row;
-     padding-right:28px;
+     display: inline-block;
+    //  flex-flow: row;
+    //  padding-right:28px;
      padding-top:5px;
      font-size: 14px;
 }
@@ -182,31 +182,13 @@ body{
      background-color:#4A4A4A;
      transition: all .25s;
 }
- header .contacts{
-     float: right ;
-}
- header .contacts p{
-     font-size: 12px;
-     padding-top:8px;
-}
- header .contacts p span{
-     color: #999;
-}
- @media screen and (max-width: 39.99875em) {
-     header .contacts{
-         display:none 
-    }
-}
+ 
+ 
 
 
 /*1920*/
 
 @media screen and (min-width: 90.063em) {
-  .header-logo img{
-     width: 130px;
-     height: auto;
-  }
-  
   .top-main-nav {
      padding-left: 75px;
   }
@@ -214,15 +196,11 @@ body{
   .top-main-nav li{     
      padding-top:8px;
   }
-  
-   header .contacts p{
-     padding-top:10px;
-   } 
 }
 
 
 .left-content{
-    padding: 20vh 0;
+    padding: 16vh 0;
 
 button{
     background: #000;
@@ -301,7 +279,7 @@ ul{
     // position: relative;
     bottom: 0;
     img{
-        padding-top: 10vh;
+        padding-top: 7vh;
     }
 }
 
