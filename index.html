@@ -10,11 +10,41 @@
     <title>Space</title>
 </head>
 <body>
+
+
+      <header class="white-bg">
+        <div class="row expanded padded">
+            <div class="small-12 columns ">
+                <div class="header-logo">
+                    <a href="index.html"> 
+                    Space.
+                  </a>
+                </div>
+
+                <!--  Responsive menu-->
+                <a aria-label="mobile menu" class="nav-toggle">
+                    <span></span>
+                    <span></span>
+                </a>
+
+                <nav>
+                    <ul class="top-main-nav">
+                        <li class="current"> <a href="index.html">Home</a> </li>
+                        <li> <a href="#!">Products</a> </li>
+                        <li> <a href="#!">Job</a> </li>
+                        <li> <a href="#!">Contact</a> </li>
+                    </ul>
+                </nav>
+                
+            </div>
+        </div>
+    </header>
     
     <!-- Content -->
 
     <section class="content">
-        <div class="row expanded">
+        <div class="content-wrap">
+ <div class="row expanded">
             <div class="medium-6 small-12 left-content">
                 <h1>404</h1>
                 <span>Fishing in Space</span>
@@ -33,6 +63,8 @@
             </div>
            
         </div>
+        </div>
+       
 
         <div class="row expanded">
             <div class="medium-6 small-4">
@@ -51,8 +83,28 @@
         </div>
     </section>
 
-
+<script src="./assets/js/jquery.min.js"></script>
     <script src="./assets/js/foundation.min.js"></script>
     <!-- <link rel="stylesheet" href="./assets/js/main.js"> -->
+
+     <!--  Power up foundation-->
+    <script>
+        $(document).foundation()
+    </script>
+
+    <!-- Reponsive Top menu -->
+
+    <script>
+        // TOGGLE HAMBURGER & COLLAPSE NAV
+            $('.nav-toggle').on('click', function () {
+                $(this).toggleClass('open');
+                $('.top-main-nav').toggleClass('collapse');
+            });
+            // REMOVE X & COLLAPSE NAV ON ON CLICK
+            $('.menu-left a').on('click', function () {
+                $('.nav-toggle').removeClass('open');
+                $('.top-main-nav').removeClass('collapse');
+            });
+    </script>
 </body>
 </html>
